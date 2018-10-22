@@ -1,0 +1,417 @@
+body {
+   background: url(https://i.imgur.com/MJAkxbh.png)
+ }
+
+#mir {
+ position: fixed;
+ top: 0px;
+ right: 0px;
+ background-color: teal;
+ z-index: 1;
+}
+h1 {
+ transform: scale(1);
+ margin: 20px 40px 20px 40px;
+ transition: transform 0.5s ease;
+}
+h1:hover {
+ transform: scale(1.1);
+ margin: 20px 40px 20px 40px;
+
+}
+
+.orgCard {
+ background: white;
+ border-color: black;
+ border-width: 3px;
+ border-style: solid;
+ border-radius: 20px;
+ padding: 20px;
+ margin: 50px;
+ width: 450px;
+ box-shadow: 5px 2px 5px 5px gray;/* offset-x offset-y (optional:blur-radius spread-radius) color */
+ position: relative;
+}
+
+.orgTitle {
+ text-align: center;
+ padding: 15px;
+ background: linear-gradient(90deg, lightgrey, white);
+ text-transform: uppercase; /* lowercase caitalize initial inherit none */
+ font-weight: 200;
+
+}
+.orgDescription {
+ text-align: left; /* right, center, justify */
+ line-height: 25px;
+}
+.links{
+ margin-right: 20px;
+ opacity: .7;
+}
+.links:hover {
+ color: green;
+}
+#trefoil {
+ transform: scale(.5);
+ position: absolute;
+ height: 80px;
+ width: 80px;
+ top: -27px;
+ left: 310px;
+ size: 20%;
+ margin: 50px;
+
+
+}
+
+/* direct decendents of trefoil id */
+/* #trefoil>div{ 
+    background-color: green;
+    height: 60px;
+    width: 40px;
+    border-radius: 45%;
+    position: absolute;
+} */
+
+
+.trefmain {
+ background-color: green;
+ height: 60px;
+ width: 40px;
+ border-radius: 45%;
+ position: absolute;
+}
+#tref1 {
+ position: absolute;
+ top: 24px;
+ left: 0px;
+}
+#tref2 {
+ transform: rotate(90deg);
+ position: absolute;
+ top: -10px;
+ left: 38px;
+}
+#tref3 {
+ position: absolute;
+ top: 24px;
+ left: 76px;
+}
+#tref4 {
+ background-color: green;
+ width: 50px;
+ height: 50px;
+ position: absolute;
+ top: 20px;
+ left: 30px;
+}
+#tref5 {
+ background-color: green;
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+ position: absolute;
+ top: 55px;
+ left: 33px;
+}
+#float {
+ height: 60px;
+}
+#left {
+ float: left;
+ padding: 10px 50px 10px 50px;
+ background-color: maroon;
+ margin: 10px;
+ width: 30%;
+}
+#right {
+ float: right;
+ padding: 10px 50px 10px 50px;
+ margin: 10px;
+ background-color: maroon;
+ width: 30%;
+}
+#auto {
+ background-color: yellow;
+ height: 50px;
+ width: 100px;
+margin: auto;
+}
+
+.transformproperties {
+ margin: 30px auto;
+ max-width: 1000px;
+ width: 90vw;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ font-family: sans-serif;
+}
+.box {
+ width: calc(20%);
+ min-width: 120px;
+ margin: 20px 20px;
+ background: #ddd;
+ cursor: pointer;
+ color: #FFF;
+ text-align: center;
+ line-height: 130px;
+}
+.orange {
+ background-color: 	rgb(255,127,80, 0.5);
+}
+#scaleX {
+ transform: scaleX(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #scaleX{
+ transform: scaleX(2);
+}
+#scaleY {
+ transform: scaleY(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #scaleY {
+ transform: scaleY(2);
+}
+#scale {
+ transform:scale(1,1);
+ transition: transform 0.5s ease;
+}
+.box:hover #scale {
+ transform: scale(1.5,1.5);
+}
+#translateX {
+ transform: translateX(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #translateX {
+ transform: translateX(2em);
+}
+#translateY {
+ transform: translateY(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #translateY{
+ transform: translateY(2em);
+}
+#translate{
+ transform: translate(1,1);
+ transition: transform 0.5s ease;
+}
+.box:hover #translate{
+ transform: translate(2em, 2em)
+}
+#matrix {
+ transform: matrix(1,1,1,1);
+ transition: transform 0.5s ease;
+}
+.box:hover #matrix{
+ transform: matrix(1,-1,0,1,0,0);
+}
+#rotate {
+ transform: rotate(0);
+ transition: transform 0.5s ease;
+}
+.box:hover #rotate{
+ transform: rotate(270deg)
+}
+#skew{
+ transform: skew(1,1);
+ transition: transform 0.5s ease;
+}
+.box:hover #skew{
+ transform: skew(30deg, 20deg);
+}
+#skewX {
+ transform: skewX(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #skewX{
+ transform: skewX(30deg)
+}
+#skewY {
+ transform: skewY(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #skewY{
+ transform: skewY(30deg)
+}
+#matrix3d{
+ transform: matrix3d(1);
+ transition: transform 0.5s ease;
+}
+.box:hover #matrix3d{
+ transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1)
+}
+#translate3d{
+ transform: translate3d(1px, 1px, 1);
+ transition: transform 0.5s ease;
+}
+.box:hover #translate3d{
+ transform: translate3d(1px, 1px, 50px) rotate3d(3,2,2,90deg);
+ }
+#rotateY{
+ transform: perspective(1) scaleZ(1) rotateY(0deg);
+ transition: transform 0.5s ease;
+}
+.box:hover #rotateY{
+ transform: perspective(500px) scaleZ(2) rotateY(45deg);
+}
+#rotateX {
+ transform: perspective(1) scaleZ(1) rotateX(0deg);
+ transition: transform 0.5s ease;
+}
+.box:hover #rotateX{
+ transform: perspective(500px) scaleZ(2) rotateX(45deg);
+}
+#translateZ{
+ transform: translateZ(1px);
+ transition: transform 0.5s ease;
+}
+.box:hover #translateZ{
+ transform: rotate3d(3,2,2,90deg) translateZ(50px);
+}
+#shapes{
+ margin: 30px auto;
+ max-width: 1000px;
+ width: 90vw;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+}
+.shapecontainer{
+ width: calc(20%);
+ min-width: 120px;
+ margin: 20px 20px;
+ line-height: 130px;
+}
+.box {
+ width: calc(20%);
+ min-width: 120px;
+ margin: 20px 20px;
+ background: #ddd;
+ cursor: pointer;
+ color: #FFF;
+ text-align: center;
+ line-height: 130px;
+}
+#moon{
+ top:0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ width: 100px;
+ height: 100px;
+ background-color: transparent;
+ border-radius: 50px;
+ box-shadow: 25px 10px 0px 10px yellow;
+ float: left;
+}
+#hectagon{
+ height: 50px;
+ width:30px;
+ background-color: pink;
+ margin: auto;
+}
+#hectagon::before{
+ content:"";
+ position: absolute;
+ height:50px;
+ width:30px;
+ background-color: pink;
+ transform: rotate(60deg);
+}
+#hectagon::after{
+ content: "";
+ position: absolute;
+ height: 50px;
+ width: 30px;
+ background-color: pink;
+ transform: rotate(-60deg);
+}
+#triangle {
+ width: 0;
+ height: 0;
+ border-top: 50px solid transparent;
+ border-left: 100px solid red;
+ border-bottom: 50px solid transparent;
+}
+#trapezoid {
+ border-bottom: 100px solid red;
+ border-left: 35px solid transparent;
+ border-right: 35px solid transparent;
+ height: 0;
+ width: 100px;
+}
+#star{
+ margin: 50px 0;
+ position: relative;
+ display: block;
+ color: red;
+ width: 0px;
+ height:  0px;
+ border-right: 100px solid transparent;
+ border-bottom: 70px solid red;
+ border-left: 100px solid transparent;
+ transform: rotate(32deg);
+}
+#star::before{
+ content:"";
+ border-bottom: 80px solid red;
+ border-left: 30px solid transparent;
+ border-right: 30px solid transparent;
+ position: absolute;
+ height: 0;
+ width: 0;
+ top: -45px;
+ left: -65px;
+ display: block;
+ transform: rotate(-35deg)
+}
+#star::after{
+ content: "";
+ position: absolute;
+ display: block;
+ color: red;
+ top: 3px;
+ left: -105px;
+ width: 0px;
+ border-right: 100px solid transparent;
+ border-bottom: 70px solid red;
+ border-left: 100px solid transparent;
+ transform: rotate(-70deg);
+}
+#heart{
+ position: relative;
+ margin: auto;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-color: pink;
+ height: 50px;
+ width: 50px;
+ transform: rotate(-45deg);
+}
+#heart::after {
+ background-color: pink;
+ content: "";
+ border-radius: 50%;
+ position: absolute;
+ width: 50px;
+ height: 50px;
+ top: 0px;
+ left: 28px;
+}
+#heart::before{
+ content: "";
+ background-color: pink;
+ border-radius: 50%;
+ position: absolute;
+ width: 50px;
+ height: 50px;
+ top: -28px;
+ left: 0px;
+}
